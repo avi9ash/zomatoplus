@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.validator.constraints.UniqueElements;
+
 
 @Entity
 @Table(name="tbl_user")
@@ -16,7 +18,7 @@ public class User implements Serializable
 	@Id
 	@GeneratedValue
 	private long id;
-	@Column(name="name")
+	@Column(name="name",unique=true)
 	private String name;
 	@Column(name="password")
 	private String pswd;

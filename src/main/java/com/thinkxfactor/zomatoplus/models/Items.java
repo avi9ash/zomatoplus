@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.print.attribute.standard.MediaSize.NA;
 
 @Entity
 @Table(name="tbl_items")

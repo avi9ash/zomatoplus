@@ -6,5 +6,6 @@ import com.thinkxfactor.zomatoplus.models.User;
 
 public interface UserRepository extends JpaRepository<User,Long> 
 {
+	User findByNameAndPswd(String name, String pswd );
 
 }
